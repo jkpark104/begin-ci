@@ -1,4 +1,1 @@
-console.log("app.j
-
-
-s");
+console.log("app.js");
