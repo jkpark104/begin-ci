@@ -1,4 +1,4 @@
-import { attack } from './attack.js'
+import { attack } from './attack'
 
 test('should return damage sentence when called correctly', () => {
   const result = attack('Smelly Ogre', 23, true)
