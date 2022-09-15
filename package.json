@@ -1,16 +1,26 @@
 {
+  "type": "module",
   "name": "begin-ci",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ci:lint": "eslint .",
+    "test": "jest --watch",
+    "ci:test": "jest --ci"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.23.1"
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "@types/jest": "^29.0.2",
+    "babel-jest": "^29.0.3",
+    "eslint": "^8.23.1",
+    "eslint-plugin-jest": "^27.0.4",
+    "jest": "^29.0.3",
+    "prettier": "^2.7.1"
   }
 }
